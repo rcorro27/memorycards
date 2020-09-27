@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="jeu.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <button class="btn btn1" value="newGame">Nouvelle Partie </button>
+
+        </div>
+        <div class="text">
+
+            <h3>Temps Ecoule</h3>
+            <h3 id="temps">.</h3>
+            <h3>Paires Trouver</h3>
+            <h3 id="pairesTrouver">.</h3>
+            <h3>Meilleur Temps</h3>
+            <h3 id="meilleurTemps">.</h3>
+        </div>
+
+        <div class="winning-message" id="winningMessage">
+            <div id="winning-text"></div>
+            <button id="restartButton">Restart</button>
+        </div>
+
+    </nav>
+    <div id="cardContainer">
+        <div class="scene scene--card">
+            <div class="card " data-car="car1">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car1.png" alt="Car1">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car2">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car2.png" alt="Car2">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car3">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car3.png" alt="Car3">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car4">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car4.png" alt="Car4">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car5">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car5.png" alt="Car5">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car6">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car6.png" alt="Car6">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car7">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car7.png" alt="Car7">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car8">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car8.png" alt="Car8">
+            </div>
+        </div>
+        <!--DUPLICATION DES CARTES ---------------------------------------------------------------->
+        <div class="scene scene--card">
+            <div class="card " data-car="car1">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car1.png" alt="Car1">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car2">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car2.png" alt="Car2">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car3">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car3.png" alt="Car3">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car4">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car4.png" alt="Car4">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car5">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car5.png" alt="Car5">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car6">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car6.png" alt="Car6">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car7">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car7.png" alt="Car7">
+            </div>
+        </div>
+        <div class="scene scene--card">
+            <div class="card " data-car="car8">
+                <img class="card__face card__face--front" src="photos/Interrogation.png" alt="meme1">
+                <img class="card__face card__face--back" src="photos/Car8.png" alt="Car8">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jeu.js"></script>
+
+</body>
+
+</html>
